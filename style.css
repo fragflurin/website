@@ -158,3 +158,29 @@ html{scroll-behavior:smooth}
 .karten{max-width:52rem}
 
 @media (max-width:360px){.kopf .wrap{flex-wrap:wrap;gap:.25rem 1rem}.kopf nav{gap:.9rem}}
+
+/* ===== Optimierung Oktober 2026 ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.4rem;line-height:1.25;text-align:center}
+.marke a.logo{display:inline-flex;align-items:center;gap:.6rem}
+.logo img{display:block;width:2rem;height:2rem;flex:none}
+.hero .bild{border-radius:1.75rem;box-shadow:0 14px 36px rgba(30,42,43,.18)}
+@media(max-width:55.99rem){.hero{padding-top:1.25rem;padding-bottom:1.75rem}.hero .zwei{gap:1.25rem}}
+@media(min-width:56rem){.hero .zwei{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:2.5rem}}
+form.warteliste button{display:flex;align-items:center;justify-content:center;min-height:3.4rem;line-height:1.25;background:var(--tanne);color:#fff}
+form.warteliste button:hover{background:#163A2F;filter:none}
+form.warteliste button:focus-visible{outline:3px solid var(--text);outline-offset:3px}
+form.warteliste button:disabled{background:#4A6B5F;color:#fff;opacity:1;cursor:wait}
+.geraete{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:0 0 1.25rem}
+.geraete[hidden]{display:none}
+.geraete-titel{font-weight:700;color:var(--tanne);margin-right:.25rem}
+.geraet{width:auto;background:var(--weiss);color:var(--tanne);border:2px solid var(--tanne);padding:.55rem 1.3rem;font-size:1.05rem}
+.geraet:hover{filter:none;background:#fff}
+.geraet[aria-pressed=true]{background:var(--tanne);color:var(--creme)}
+.variante+.variante{margin-top:1.25rem}
+.variante h3{font-size:1.1rem;margin-bottom:.6rem}
+.js .variante h3{display:none}
+.js .variante[hidden]{display:none}
+@media(max-width:30rem){.kopf .wrap{gap:.6rem}.kopf nav{gap:.8rem}.kopf .marke{font-size:1.1rem}.marke a.logo{gap:.45rem}.logo img{width:1.75rem;height:1.75rem}.knoepfe .btn{flex:1 1 100%;padding-inline:1rem;font-size:1.05rem}}
+footer nav{flex-wrap:wrap;gap:.2rem 1.25rem}
+@media(max-width:30rem){.geraete-titel{flex:1 1 100%}}
+@media(min-width:56rem){.hero{padding-top:1.75rem;padding-bottom:2.5rem}.hero h1{line-height:1.08}.hero .badge{margin:.7rem 0 .9rem}.hero .lead{margin:0 0 .25rem!important}.hero .knoepfe{margin:1rem 0 0;gap:.65rem}.hero .btn{min-height:3.1rem;padding-block:.7rem}}
