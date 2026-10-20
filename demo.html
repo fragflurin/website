@@ -23,8 +23,8 @@
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 <header class="kopf"><div class="wrap breit">
-  <p class="marke"><a href="/">FragFlurin</a></p>
-  <nav aria-label="Hauptnavigation"><a href="/">Startseite</a><a href="/#warteliste">Warteliste</a></nav>
+  <p class="marke"><a class="logo" href="/"><img src="/favicon.svg" width="32" height="32" alt=""><span>FragFlurin</span></a></p>
+  <nav aria-label="Hauptnavigation"><a href="/demo">Demo</a><a href="/#warteliste">Warteliste</a></nav>
 </div></header>
 <main id="inhalt">
 
@@ -39,19 +39,37 @@
       <button type="button" class="szenario" data-ziel="paket" aria-pressed="false">Verdächtige Paket-SMS</button>
     </div>
 
+    <div class="geraete" role="group" aria-label="Handy wählen" hidden>
+      <span class="geraete-titel">Mein Handy ist ein:</span>
+      <button type="button" class="geraet" data-geraet="iphone" aria-pressed="true">iPhone</button>
+      <button type="button" class="geraet" data-geraet="android" aria-pressed="false">Android</button>
+    </div>
+
     <div class="telefon" aria-live="polite">
 
       <div class="panel" id="kontakt">
         <p class="frage">«Wie speichere ich eine Telefonnummer?»</p>
         <div class="antwort">
           <h2>So geht es:</h2>
+        <div class="variante" data-geraet="iphone">
+          <h3>Auf dem iPhone</h3>
           <ol>
-            <li>Öffnen Sie die Kontakte-App auf Ihrem Handy.</li>
-            <li>Tippen Sie auf das Pluszeichen.</li>
-            <li>Geben Sie den Namen und die Telefonnummer ein.</li>
-            <li>Tippen Sie auf «Speichern» oder «Sichern».</li>
+            <li>Suchen Sie auf Ihrem iPhone die App «Kontakte» und öffnen Sie sie. Das Symbol zeigt eine Person auf grauem Grund.</li>
+            <li>Tippen Sie oben rechts auf das Pluszeichen (+).</li>
+            <li>Tragen Sie den Namen und die Telefonnummer ein.</li>
+            <li>Tippen Sie oben rechts auf «Fertig».</li>
           </ol>
-          <p class="notiz">Die genauen Schritte können je nach Handy unterschiedlich sein.</p>
+        </div>
+        <div class="variante" data-geraet="android">
+          <h3>Auf einem Android-Handy</h3>
+          <ol>
+            <li>Suchen Sie auf Ihrem Handy die App «Kontakte» und öffnen Sie sie.</li>
+            <li>Tippen Sie auf das Pluszeichen (+) oder auf «Kontakt erstellen».</li>
+            <li>Tragen Sie den Namen und die Telefonnummer ein.</li>
+            <li>Tippen Sie auf «Speichern».</li>
+          </ol>
+        </div>
+          <p class="notiz">Die Namen und Symbole können je nach Handy etwas anders aussehen.</p>
         </div>
       </div>
 
@@ -59,13 +77,25 @@
         <p class="frage">«Ich finde WhatsApp nach dem Update nicht mehr.»</p>
         <div class="antwort">
           <h2>So geht es:</h2>
+        <div class="variante" data-geraet="iphone">
+          <h3>Auf dem iPhone</h3>
           <ol>
-            <li>Öffnen Sie die App-Suche auf Ihrem Handy.</li>
-            <li>Suchen Sie nach «WhatsApp».</li>
-            <li>Wenn WhatsApp erscheint, tippen Sie auf das Symbol.</li>
-            <li>Wenn die App nicht erscheint, fragen Sie eine vertraute Person, bevor Sie etwas neu installieren.</li>
+            <li>Gehen Sie auf den Startbildschirm Ihres iPhones. Das ist die Seite mit den vielen kleinen Symbolen.</li>
+            <li>Legen Sie den Finger ungefähr in die Mitte des Bildschirms und wischen Sie nach unten.</li>
+            <li>Tippen Sie oben in das Suchfeld und schreiben Sie «WhatsApp».</li>
+            <li>Wenn das grüne WhatsApp-Symbol erscheint, tippen Sie darauf.</li>
           </ol>
-          <p class="notiz">Ein Update bedeutet nicht automatisch, dass die App gelöscht wurde.</p>
+        </div>
+        <div class="variante" data-geraet="android">
+          <h3>Auf einem Android-Handy</h3>
+          <ol>
+            <li>Gehen Sie auf den Startbildschirm Ihres Handys. Das ist die Seite mit den vielen kleinen Symbolen.</li>
+            <li>Legen Sie den Finger unten auf den Bildschirm und wischen Sie nach oben.</li>
+            <li>Tippen Sie oben in das Suchfeld und schreiben Sie «WhatsApp».</li>
+            <li>Wenn das grüne WhatsApp-Symbol erscheint, tippen Sie darauf.</li>
+          </ol>
+        </div>
+          <p class="notiz">Ein Update löscht die App nicht automatisch. Erscheint WhatsApp nicht, fragen Sie eine vertraute Person, bevor Sie etwas neu installieren. Bei manchen Handys ist die Bedienung etwas anders.</p>
         </div>
       </div>
 
@@ -74,12 +104,12 @@
         <div class="antwort">
           <h2>So gehen Sie vor:</h2>
           <ol>
-            <li>Öffnen Sie den Link vorerst nicht.</li>
-            <li>Unerwartete Zahlungsaufforderungen und Zeitdruck sind Warnzeichen.</li>
-            <li>Prüfen Sie die Sendung ausschliesslich über die offizielle Website oder App des Paketdienstes.</li>
+            <li>Tippen Sie nicht auf den Link in der Nachricht.</li>
+            <li>Öffnen Sie stattdessen die offizielle App oder Website des Paketdienstes selbst.</li>
+            <li>Prüfen Sie dort, ob wirklich ein Paket auf Sie wartet.</li>
             <li>Wenn Sie unsicher sind, fragen Sie eine vertraute Person.</li>
           </ol>
-          <p class="notiz">Dies ist nur ein Beispiel und keine echte Sicherheitsprüfung einer Nachricht.</p>
+          <p class="notiz">Warnzeichen sind Zeitdruck und unerwartete Zahlungsaufforderungen. Dies ist nur ein Beispiel und keine echte Sicherheitsprüfung einer Nachricht.</p>
         </div>
       </div>
 
@@ -95,7 +125,7 @@
     </div>
   </div></section>
 </main>
-<footer><div class="wrap"><span>© FragFlurin</span><nav aria-label="Rechtliches"><a href="/">Startseite</a><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></nav></div></footer>
+<footer><div class="wrap"><span>© FragFlurin</span><nav aria-label="Rechtliches"><a href="/">Startseite</a><a href="/demo">Demo</a><a href="/datenschutz.html">Datenschutz</a><a href="/impressum.html">Impressum</a></nav></div></footer>
 <script src="demo.js"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d68b5fda22a94a58b556793110dfaead"}'></script><!-- End Cloudflare Web Analytics -->
 </body></html>
