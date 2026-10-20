@@ -150,3 +150,9 @@ footer nav a{padding:.3rem 0}
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
 html{scroll-behavior:smooth}
+
+/* Einheitliche Ausrichtung: alle Abschnitte teilen die breite Spalte, Lesetext und Formulare bleiben schmal */
+.wrap{max-width:64rem}
+.wrap.text{max-width:40rem}
+.zitate,.versprechen,details,form.warteliste,.demo-ende,.telefon,.szenarien,.hinweis,.klein{max-width:44rem}
+.karten{max-width:52rem}
