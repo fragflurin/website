@@ -156,3 +156,5 @@ html{scroll-behavior:smooth}
 .wrap.text{max-width:40rem}
 .zitate,.versprechen,details,form.warteliste,.demo-ende,.telefon,.szenarien,.hinweis,.klein{max-width:44rem}
 .karten{max-width:52rem}
+
+@media (max-width:360px){.kopf .wrap{flex-wrap:wrap;gap:.25rem 1rem}.kopf nav{gap:.9rem}}
