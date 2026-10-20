@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kostenlose Beispiel-Demo – so soll FragFlurin erklären</title>
+<meta name="description" content="Probier die Beispiel-Demo von FragFlurin aus: drei feste Situationen zeigen, wie die geplante App Technikfragen in einfachen Schritten beantwortet. Ohne Anmeldung.">
+<link rel="canonical" href="https://fragflurin.ch/demo">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_CH">
+<meta property="og:site_name" content="FragFlurin">
+<meta property="og:title" content="FragFlurin selbst ausprobieren – Beispiel-Demo">
+<meta property="og:description" content="Drei Beispielsituationen zeigen, wie FragFlurin älteren Menschen Technik einfach erklären soll.">
+<meta property="og:url" content="https://fragflurin.ch/demo">
+<meta property="og:image" content="https://fragflurin.ch/images/demo-sofa.webp">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="405">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<header class="kopf"><div class="wrap breit">
+  <p class="marke"><a href="/">FragFlurin</a></p>
+  <nav aria-label="Hauptnavigation"><a href="/">Startseite</a><a href="/#warteliste">Warteliste</a></nav>
+</div></header>
+<main id="inhalt">
+
+  <section><div class="wrap">
+    <h1 style="font-size:clamp(2rem,7vw,2.8rem)">FragFlurin selbst ausprobieren</h1>
+    <p class="hinweis" style="margin-top:1.25rem">Interaktive Beispiel-Demo – die vollständige App befindet sich noch in Entwicklung.</p>
+    <p class="intro">Wähle eine Situation. Du siehst, wie FragFlurin später in einfachen Schritten antworten soll. Alle Antworten sind feste Beispiele. Die Demo stellt keine KI-Anfragen und übermittelt keine eigenen Eingaben. Wie auf der ganzen Website läuft eine anonyme Reichweitenmessung (Cloudflare Web Analytics).</p>
+
+    <div class="szenarien" role="group" aria-label="Beispielsituation wählen">
+      <button type="button" class="szenario" data-ziel="kontakt" aria-pressed="true">Kontakt speichern</button>
+      <button type="button" class="szenario" data-ziel="whatsapp" aria-pressed="false">WhatsApp nach dem Update</button>
+      <button type="button" class="szenario" data-ziel="paket" aria-pressed="false">Verdächtige Paket-SMS</button>
+    </div>
+
+    <div class="telefon" aria-live="polite">
+
+      <div class="panel" id="kontakt">
+        <p class="frage">«Wie speichere ich eine Telefonnummer?»</p>
+        <div class="antwort">
+          <h2>So geht es:</h2>
+          <ol>
+            <li>Öffnen Sie die Kontakte-App auf Ihrem Handy.</li>
+            <li>Tippen Sie auf das Pluszeichen.</li>
+            <li>Geben Sie den Namen und die Telefonnummer ein.</li>
+            <li>Tippen Sie auf «Speichern» oder «Sichern».</li>
+          </ol>
+          <p class="notiz">Die genauen Schritte können je nach Handy unterschiedlich sein.</p>
+        </div>
+      </div>
+
+      <div class="panel" id="whatsapp">
+        <p class="frage">«Ich finde WhatsApp nach dem Update nicht mehr.»</p>
+        <div class="antwort">
+          <h2>So geht es:</h2>
+          <ol>
+            <li>Öffnen Sie die App-Suche auf Ihrem Handy.</li>
+            <li>Suchen Sie nach «WhatsApp».</li>
+            <li>Wenn WhatsApp erscheint, tippen Sie auf das Symbol.</li>
+            <li>Wenn die App nicht erscheint, fragen Sie eine vertraute Person, bevor Sie etwas neu installieren.</li>
+          </ol>
+          <p class="notiz">Ein Update bedeutet nicht automatisch, dass die App gelöscht wurde.</p>
+        </div>
+      </div>
+
+      <div class="panel" id="paket">
+        <p class="frage">«Eine Nachricht sagt, mein Paket sei blockiert und ich müsse auf einen Link klicken.»</p>
+        <div class="antwort">
+          <h2>So gehen Sie vor:</h2>
+          <ol>
+            <li>Öffnen Sie den Link vorerst nicht.</li>
+            <li>Unerwartete Zahlungsaufforderungen und Zeitdruck sind Warnzeichen.</li>
+            <li>Prüfen Sie die Sendung ausschliesslich über die offizielle Website oder App des Paketdienstes.</li>
+            <li>Wenn Sie unsicher sind, fragen Sie eine vertraute Person.</li>
+          </ol>
+          <p class="notiz">Dies ist nur ein Beispiel und keine echte Sicherheitsprüfung einer Nachricht.</p>
+        </div>
+      </div>
+
+    </div>
+  </div></section>
+
+  <section class="hell"><div class="wrap">
+    <div class="demo-ende">
+      <h2>Du möchtest FragFlurin als eine der ersten Familien testen?</h2>
+      <p class="intro">FragFlurin befindet sich noch in Entwicklung. Trag dich unverbindlich auf die Warteliste ein und erfahre, wann neue Testplätze verfügbar sind.</p>
+      <a class="btn btn-primaer" href="/#warteliste">Auf die Warteliste</a>
+      <p class="klein">Unverbindlich. Kein Kauf und kein automatisches Abo.</p>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap"><span>© FragFlurin</span><nav aria-label="Rechtliches"><a href="/">Startseite</a><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></nav></div></footer>
+<script src="demo.js"></script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d68b5fda22a94a58b556793110dfaead"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>

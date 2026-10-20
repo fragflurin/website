@@ -68,3 +68,93 @@ ul.versprechen.nein li::before{border:0;transform:none;width:auto;height:auto;co
 details{background:var(--weiss);border:2px solid var(--linie);border-radius:1rem;padding:.9rem 1.1rem;margin-bottom:.75rem}
 summary{cursor:pointer;font-weight:700;color:var(--tanne)}
 details p{margin:.7rem 0 0}
+
+/* ===== Pre-Launch 2027: Erweiterungen (bestehende Regeln bleiben unverändert) ===== */
+.skip{position:absolute;left:-9999px;top:0;background:var(--tanne);color:var(--creme);padding:.7rem 1rem;border-radius:0 0 .8rem 0;z-index:10}
+.skip:focus{left:0}
+.kopf{padding:1rem 0;border-bottom:1px solid var(--linie);background:var(--creme)}
+.kopf .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.kopf .marke{margin:0;font-size:1.25rem}
+.kopf .marke a{text-decoration:none}
+.kopf nav{display:flex;gap:1.1rem;align-items:center;font-weight:700}
+.kopf nav a{color:var(--tanne);text-decoration:none;padding:.5rem .1rem}
+.kopf nav a:hover{text-decoration:underline}
+.wrap.breit{max-width:64rem}
+.hero{padding-top:2.25rem;padding-bottom:2.5rem}
+.motto{font-family:"Fraunces",Georgia,serif;font-style:italic;color:var(--tanne);font-size:1.15rem;margin:0 0 .75rem}
+.badge{display:inline-block;background:var(--weiss);border:2px solid var(--tanne);color:var(--tanne);border-radius:999px;padding:.3rem .95rem;font-weight:700;font-size:.95rem;margin:1rem 0 1.25rem}
+.zwei{display:grid;gap:1.75rem;align-items:center}
+.zwei .text-spalte>*:first-child{margin-top:0}
+.bild{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:1.5rem;background:var(--linie);box-shadow:0 10px 28px rgba(30,42,43,.14)}
+.knoepfe{display:flex;flex-wrap:wrap;gap:.8rem;margin:1.5rem 0 .5rem}
+.btn{display:inline-block;font:inherit;font-weight:700;font-size:1.1rem;text-align:center;text-decoration:none;padding:.95rem 1.5rem;border-radius:999px;border:2px solid transparent;cursor:pointer;width:auto}
+.btn-primaer{background:var(--orange);color:var(--text)}
+.btn-primaer:hover{filter:brightness(.96)}
+.btn-zweit{background:transparent;color:var(--tanne);border-color:var(--tanne)}
+.btn-zweit:hover{background:var(--weiss)}
+.knoepfe .btn{flex:1 1 14rem}
+.status{display:inline-block;background:#E9F0EC;color:var(--tanne);border-radius:999px;padding:.15rem .75rem;font-size:.85rem;font-weight:700;margin:0 0 .6rem}
+.funktion{padding:2.5rem 0}
+.funktion h3{font-size:clamp(1.5rem,5vw,2rem);margin-bottom:.75rem}
+.funktion p{margin:0;max-width:34rem}
+.schritte3{list-style:none;margin:0;padding:0;display:grid;gap:1rem;counter-reset:s3}
+.schritte3 li{background:var(--creme);border:2px solid var(--linie);border-radius:1.25rem;padding:1.25rem}
+.schritte3 .icon{width:3rem;height:3rem;border-radius:50%;background:var(--tanne);color:var(--creme);display:grid;place-items:center;margin-bottom:.8rem}
+.schritte3 .icon svg{width:1.6rem;height:1.6rem}
+.schritte3 h3{font-size:1.25rem;margin-bottom:.35rem}
+.schritte3 h3::before{counter-increment:s3;content:counter(s3) ". ";color:var(--tanne)}
+.schritte3 p{margin:0}
+.demo-box{background:var(--tanne);color:var(--creme);border-radius:1.75rem;padding:1.5rem;display:grid;gap:1.5rem;align-items:center}
+.demo-box h2{color:var(--creme);margin-bottom:.75rem}
+.demo-box p{margin:0 0 1.25rem}
+.demo-box .btn-primaer{display:inline-block}
+.team p{max-width:36rem;margin:0 0 1rem}
+.hinweis{background:#FFF1D6;border:2px solid var(--orange);border-radius:1rem;padding:.9rem 1.1rem;font-weight:700;margin:0 0 1.5rem}
+footer nav a{padding:.3rem 0}
+
+/* Warteliste */
+.wl h2{margin-bottom:.75rem}
+.wl .lead{margin-top:0}
+
+/* Demo */
+.szenarien{display:grid;gap:.75rem;margin:0 0 1.5rem}
+.szenario{width:100%;text-align:left;background:var(--weiss);color:var(--tanne);border:2px solid var(--tanne);border-radius:1.25rem;padding:1rem 1.25rem;font-size:1.1rem;font-weight:700}
+.szenario:hover{background:#fff;filter:none}
+.szenario[aria-pressed=true]{background:var(--tanne);color:var(--creme)}
+.telefon{background:var(--weiss);border:2px solid var(--tanne);border-radius:2rem;padding:1.25rem;box-shadow:0 12px 30px rgba(30,42,43,.14)}
+.frage{background:#E9F0EC;border-radius:1.25rem 1.25rem 1.25rem .3rem;padding:1rem 1.2rem;font-size:1.25rem;font-weight:700;color:var(--tanne);margin:0 0 1.25rem}
+.antwort h3{font-size:1.2rem;margin-bottom:.75rem}
+.antwort ol{margin:0 0 1rem;padding:0;list-style:none;display:grid;gap:.75rem;counter-reset:a}
+.antwort li{counter-increment:a;position:relative;padding:.9rem 1rem .9rem 3.6rem;background:var(--creme);border:2px solid var(--linie);border-radius:1.1rem;font-size:1.25rem;line-height:1.5}
+.antwort li::before{content:counter(a);position:absolute;left:.9rem;top:.8rem;width:2.1rem;height:2.1rem;border-radius:50%;background:var(--tanne);color:var(--creme);font-family:"Fraunces",serif;font-weight:700;display:grid;place-items:center}
+.antwort .notiz{margin:0;font-size:1rem;color:#3a4849;border-left:4px solid var(--tanne);padding-left:.9rem}
+.js .antwort li{animation:rein .45s ease both}
+.js .antwort li:nth-child(2){animation-delay:.12s}
+.js .antwort li:nth-child(3){animation-delay:.24s}
+.js .antwort li:nth-child(4){animation-delay:.36s}
+@keyframes rein{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.js .panel[hidden]{display:none}
+.demo-ende{background:var(--weiss);border:2px solid var(--linie);border-radius:1.5rem;padding:1.5rem}
+.demo-ende h2{font-size:clamp(1.4rem,5vw,1.8rem)}
+
+@media(min-width:56rem){
+  .zwei{grid-template-columns:1fr 1fr;gap:3rem}
+  .zwei.umgekehrt .bild-spalte{order:-1}
+  .hero{padding-top:3.5rem;padding-bottom:3.5rem}
+  .schritte3{grid-template-columns:repeat(3,1fr)}
+  .demo-box{grid-template-columns:1fr 1fr;padding:2rem 2.25rem}
+  .szenarien{grid-template-columns:repeat(3,1fr)}
+  .szenario{height:100%}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+html{scroll-behavior:smooth}
+
+/* Einheitliche Ausrichtung: alle Abschnitte teilen die breite Spalte, Lesetext und Formulare bleiben schmal */
+.wrap{max-width:64rem}
+.wrap.text{max-width:40rem}
+.zitate,.versprechen,details,form.warteliste,.demo-ende,.telefon,.szenarien,.hinweis,.klein{max-width:44rem}
+.karten{max-width:52rem}
+
+@media (max-width:360px){.kopf .wrap{flex-wrap:wrap;gap:.25rem 1rem}.kopf nav{gap:.9rem}}
